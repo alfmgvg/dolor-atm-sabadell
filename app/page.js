@@ -1,21 +1,21 @@
 // SEO CONFIG FOR DOMAIN
-// Recommended domain: https://cirujanomaxilofacialsabadell.com
+// Recommended domain: https://doloratmsabadell.com
 // Main SEO title:
-// "Cirujano Maxilofacial en Sabadell | Muelas del juicio e implantes dentales"
+// "Dolor ATM en Sabadell | Bruxismo, dolor orofacial y migrañas"
 // Meta description:
-// "Unidad de Cirugía Oral y Maxilofacial en el Hospital Quirónsalud del Vallès. Especialistas en muelas del juicio, cordales incluidos e implantes dentales en Sabadell y el Vallès."
+// "Unidad especializada en dolor de ATM, dolor orofacial, bruxismo, migrañas y rehabilitación neuroclusal en el Hospital Quirónsalud del Vallès, Sabadell."
 
 export default function LandingQuironValles() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'Dentist',
-    name: 'Unidad de Cirugía Oral y Maxilofacial - Hospital Quirónsalud del Vallès',
+    name: 'Unidad de ATM y Dolor Orofacial - Hospital Quirónsalud del Vallès',
     description:
-      'Unidad especializada en cirugía oral y maxilofacial en Sabadell. Tratamientos de muelas del juicio, cordales incluidos, quistes maxilares e implantes dentales. Atendemos pacientes privados y de aseguradoras con cobertura en el Hospital Quirónsalud del Vallès.',
+      'Unidad especializada en dolor de ATM, dolor orofacial, bruxismo, cefaleas y migrañas relacionadas con la mandíbula. Tratamiento funcional mediante rehabilitación neuroclusal y ortodoncia en Sabadell.',
     telephone: '+34 679 176 144',
-    url: 'https://cirujanomaxilofacialsabadell.com',
-    image: 'https://cirujanomaxilofacialsabadell.com/logo-ocm.png',
-    medicalSpecialty: 'Oral and Maxillofacial Surgery',
+    url: 'https://doloratmsabadell.com',
+    image: 'https://doloratmsabadell.com/logo-ocm.png',
+    medicalSpecialty: ['Dentistry', 'Orthodontics'],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Passeig Rubió i Ors, 23',
@@ -40,56 +40,62 @@ export default function LandingQuironValles() {
     ],
   };
 
+  const symptoms = [
+    {
+      title: 'Dolor mandibular',
+      text: 'Molestias al abrir o cerrar la boca, dolor al masticar o sensación de sobrecarga en la mandíbula.',
+    },
+    {
+      title: 'Dolor de ATM',
+      text: 'Chasquidos, bloqueos, limitación de apertura o dolor en la articulación temporomandibular.',
+    },
+    {
+      title: 'Bruxismo',
+      text: 'Apretar o rechinar los dientes, sobrecarga muscular, desgaste dental y dolor facial.',
+    },
+    {
+      title: 'Dolor orofacial',
+      text: 'Molestias en la cara, zona preauricular, musculatura masticatoria o sensación de tensión persistente.',
+    },
+    {
+      title: 'Migrañas y cefaleas',
+      text: 'Dolores de cabeza recurrentes que en algunos pacientes pueden relacionarse con alteraciones funcionales mandibulares.',
+    },
+    {
+      title: 'Problemas funcionales',
+      text: 'Alteraciones de la oclusión y la función mandibular que pueden influir en la ATM y en el dolor crónico.',
+    },
+  ];
+
   const treatments = [
     {
-      title: 'Muelas del juicio',
-      text: 'Valoración y extracción de cordales incluidos, semiincluidos o complejos con un enfoque quirúrgico seguro y personalizado.',
+      title: 'Rehabilitación neuroclusal',
+      text: 'Enfoque funcional orientado a mejorar la relación oclusal y la función mandibular para tratar la causa del problema.',
     },
     {
-      title: 'Implantes dentales',
-      text: 'Tratamientos con implantes en casos sencillos y complejos, con planificación precisa para recuperar función y estética.',
+      title: 'Ortodoncia funcional',
+      text: 'Tratamientos ortodóncicos orientados a la estabilidad, la función y el equilibrio oclusal.',
     },
     {
-      title: 'Cirugía oral compleja',
-      text: 'Abordaje de quistes maxilares, dientes incluidos, infecciones y otras patologías de cirugía oral.',
+      title: 'Bruxismo y férulas',
+      text: 'Valoración individualizada del bruxismo y uso de férulas cuando están indicadas dentro del plan global de tratamiento.',
     },
   ];
 
   const doctors = [
     {
-      name: 'Dr. Alfonso Mogedas Vegara',
-      role: 'Jefe de Servicio',
-      img: '/doctors/mogedas.jpg',
-      position: 'center 32%',
-      bio: 'Licenciado en Medicina y Cirugía por la UMH de Alicante. Especialista en Cirugía Oral y Maxilofacial vía MIR en el Hospital Vall d’Hebron. Doctor en Medicina y Cirugía Cum Laude por la UAB y Fellow del European Board of Oral and Maxillofacial Surgery. Actualmente es adjunto del Servicio de Cirugía Oral y Maxilofacial del Hospital Parc Taulí y profesor colaborador de la UAB.',
-    },
-    {
-      name: 'Dra. Laia Fité',
-      role: 'Cirujana Oral y Maxilofacial',
-      img: '/doctors/fite.jpg',
-      position: 'center 34%',
-      bio: 'Licenciada en Medicina y Cirugía, especialista vía MIR en Cirugía Oral y Maxilofacial en el Hospital Vall d’Hebron de Barcelona. Desde 2019 combina la actividad sanitaria pública en el Hospital Parc Taulí de Sabadell con la práctica privada. Formada en patología de glándulas salivales, patología infantil, cirugía del sueño, así como implantología y cirugía oral.',
-    },
-    {
-      name: 'Dr. Nil Valentínes',
-      role: 'Cirujano Oral y Maxilofacial',
-      img: '/doctors/valentines.png',
-      position: 'center 34%',
-      bio: 'Cirujano especializado en cirugía oral y maxilofacial.',
-    },
-    {
-      name: 'Dra. Paula Donate',
-      role: 'Cirujana Oral y Maxilofacial',
-      img: '/doctors/donate.jpg',
+      name: 'Dr. Florencio Páez',
+      role: 'Especialista en rehabilitación neuroclusal y ortodoncia',
+      img: '/doctors/florencio-paez.jpg',
       position: 'center 30%',
-      bio: 'Licenciada en Medicina por la Universidad de Cantabria en 2014 y Doctora en Medicina por la Universidad de Oviedo en 2020. Realizó la residencia en el Hospital Universitario Central de Asturias. Posteriormente continuó su formación con másteres y cursos, entre los que destacan: Máster en Implantología y Cirugía Oral por la Universidad Cardenal Herrera en 2021, curso de especialización en Medicina Estética Facial por la Universidad Complutense de Madrid en 2021 y Posgrado Europeo en Oncología y Cirugía de Cabeza y Cuello en 2024.',
+      bio: 'El Dr. Florencio Páez centra su práctica en el diagnóstico y tratamiento funcional de pacientes con dolor de ATM, dolor orofacial, bruxismo y cefaleas relacionadas con alteraciones mandibulares. Su enfoque se basa especialmente en la rehabilitación neuroclusal y la ortodoncia funcional, con una valoración individualizada de cada caso.',
     },
     {
-      name: 'Dr. Radek Lewko',
-      role: 'Cirujano Oral y Maxilofacial',
-      img: '/doctors/lewko.png',
-      position: 'center 33%',
-      bio: 'Cirujano especializado en cirugía oral y maxilofacial. “La medicina ha sido mi pasión desde pequeño. Durante los años de carrera despertó mi interés por la anatomía de cabeza y cuello, su complejidad y la precisión necesaria en esta área anatómica. Esto me ha llevado a especializarme como cirujano oral y maxilofacial, prestando atención a cada detalle para conseguir la recuperación precoz de mis pacientes”.',
+      name: 'Dra. Maria Jesús Díez',
+      role: 'Especialista en ATM y dolor orofacial',
+      img: '/doctors/maria-jesus-diez.jpg',
+      position: 'center 30%',
+      bio: 'La Dra. Maria Jesús Díez forma parte del equipo de atención a pacientes con dolor mandibular, trastornos de la articulación temporomandibular y dolor orofacial. Participa en la valoración clínica y en el planteamiento terapéutico personalizado según la función, la sintomatología y las necesidades de cada paciente.',
     },
   ];
 
@@ -137,11 +143,11 @@ export default function LandingQuironValles() {
           <div className="flex items-center gap-4">
             <img
               src="/logo-ocm.png"
-              alt="Unidad de Cirugía Oral y Maxilofacial"
+              alt="Unidad de ATM y Dolor Orofacial"
               className="h-12 w-auto"
             />
             <div className="text-sm font-medium text-slate-600">
-              Unidad de Cirugía Oral y Maxilofacial
+              Unidad de ATM y Dolor Orofacial
             </div>
           </div>
 
@@ -160,20 +166,18 @@ export default function LandingQuironValles() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
             <div>
               <span className="inline-flex rounded-full border border-slate-300 px-4 py-1 text-sm font-medium text-slate-700">
-                Cirugía Oral y Maxilofacial · Hospital Quirónsalud del Vallès
+                ATM y dolor orofacial · Hospital Quirónsalud del Vallès
               </span>
 
               <h1 className="mt-5 text-4xl font-bold tracking-tight text-cyan-900 lg:text-5xl">
-                Especialistas en muelas del juicio, cirugía oral compleja e implantes
-                dentales en Sabadell
+                Dolor de mandíbula, bruxismo, migrañas y problemas de ATM en Sabadell
               </h1>
 
               <p className="mt-5 text-lg leading-8 text-slate-700">
-                Atendemos a pacientes de Sabadell y poblaciones cercanas que necesitan
-                extracción de cordales incluidos, tratamiento de quistes maxilares e
-                implantes dentales, tanto en casos sencillos como complejos. Atendemos
-                pacientes privados y de aseguradoras con cobertura en el Hospital
-                Quirónsalud del Vallès.
+                Valoramos y tratamos pacientes con dolor mandibular, dolor orofacial,
+                bruxismo, cefaleas y trastornos de la articulación temporomandibular.
+                Enfoque funcional mediante rehabilitación neuroclusal y ortodoncia en
+                el Hospital Quirónsalud del Vallès.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -210,28 +214,28 @@ export default function LandingQuironValles() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm sm:col-span-2">
                 <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-                  Tratamientos destacados
+                  Motivos de consulta frecuentes
                 </p>
                 <ul className="mt-4 space-y-3 text-slate-700">
-                  <li>• Extracción de muelas del juicio complejas</li>
-                  <li>• Cordales incluidos y dientes retenidos</li>
-                  <li>• Quistes maxilares y cirugía oral</li>
-                  <li>• Implantes dentales unitarios y múltiples</li>
-                  <li>• Rehabilitación de casos complejos</li>
+                  <li>• Dolor al abrir la boca o al masticar</li>
+                  <li>• Chasquidos o bloqueos mandibulares</li>
+                  <li>• Bruxismo y sobrecarga muscular</li>
+                  <li>• Dolor facial o en la zona del oído</li>
+                  <li>• Migrañas y cefaleas relacionadas con la mandíbula</li>
                 </ul>
               </div>
 
               <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold">1ª planta</p>
+                <p className="text-3xl font-bold">ATM</p>
                 <p className="mt-2 text-slate-600">
-                  Ubicación de la consulta en el hospital
+                  Diagnóstico y tratamiento funcional
                 </p>
               </div>
 
               <div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold">Sabadell</p>
+                <p className="text-3xl font-bold">RNO</p>
                 <p className="mt-2 text-slate-600">
-                  Fácil acceso para pacientes del Vallès
+                  Rehabilitación neuroclusal y ortodoncia
                 </p>
               </div>
             </div>
@@ -244,11 +248,11 @@ export default function LandingQuironValles() {
               ¿A quién va dirigida esta página?
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              A personas que buscan un cirujano maxilofacial en Sabadell o en el Vallès
-              para resolver problemas como muelas del juicio retenidas, dolor e infección
-              de cordales, quistes de los maxilares o colocación de implantes dentales.
-              Atendemos pacientes privados y trabajamos con las principales mutuas médicas
-              con cobertura en el hospital.
+              A pacientes que presentan dolor de mandíbula, chasquidos en la ATM,
+              bruxismo, tensión facial, cefaleas o migrañas que podrían estar
+              relacionadas con alteraciones funcionales mandibulares y oclusales.
+              Atendemos pacientes privados y trabajamos con las principales mutuas
+              médicas con cobertura en el hospital.
             </p>
           </div>
 
@@ -267,11 +271,56 @@ export default function LandingQuironValles() {
         <section className="border-y border-cyan-100 bg-cyan-50">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-bold tracking-tight">Qué tratamos</h2>
+              <h2 className="text-3xl font-bold tracking-tight">Síntomas que valoramos</h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Tratamos patología habitual y compleja de cirugía oral y maxilofacial,
-                con especial dedicación a la extracción de cordales incluidos, la cirugía
-                oral avanzada y la colocación de implantes dentales.
+                No todos los dolores mandibulares son iguales. Por eso es importante
+                realizar una valoración clínica detallada para identificar el origen
+                del problema y orientar correctamente el tratamiento.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {symptoms.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm"
+                >
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight">
+              ¿Qué es la ATM y por qué puede doler?
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              La articulación temporomandibular conecta la mandíbula con el cráneo y
+              participa en funciones tan importantes como hablar, masticar o abrir la
+              boca. Cuando existe una alteración funcional, muscular u oclusal,
+              pueden aparecer dolor, chasquidos, bloqueos, tensión facial o dolores
+              de cabeza recurrentes.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              Muchos pacientes consultan después de meses o años de molestias sin un
+              diagnóstico claro. Una valoración especializada permite entender mejor
+              si el dolor tiene relación con la ATM, la musculatura o la función
+              mandibular.
+            </p>
+          </div>
+        </section>
+
+        <section className="border-y border-cyan-100 bg-cyan-50">
+          <div className="mx-auto max-w-6xl px-6 py-16">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-bold tracking-tight">Tratamientos que realizamos</h2>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                El tratamiento se adapta a cada paciente según el origen del dolor,
+                la función mandibular, el patrón oclusal y la clínica acompañante.
               </p>
             </div>
 
@@ -293,13 +342,13 @@ export default function LandingQuironValles() {
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
             <div>
               <h2 className="text-3xl font-bold tracking-tight">
-                Equipo de cirujanos maxilofaciales
+                Equipo especializado en ATM y dolor orofacial
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Equipo de cirugía oral y maxilofacial con experiencia en cirugía de
-                cordales incluidos, implantes dentales y tratamiento de patología oral
-                compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y
-                cirujano maxilofacial responsable de la unidad.
+                El equipo está formado por el Dr. Florencio Páez y la Dra. Maria
+                Jesús Díez, con dedicación a la valoración y tratamiento de
+                pacientes con dolor mandibular, bruxismo, trastornos de ATM y
+                alteraciones funcionales relacionadas con la oclusión.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -344,8 +393,7 @@ export default function LandingQuironValles() {
 
               <div className="mt-8 space-y-3 text-slate-700">
                 <p>
-                  <span className="font-semibold">Teléfono y WhatsApp:</span> 679 176
-                  144
+                  <span className="font-semibold">Teléfono y WhatsApp:</span> 679 176 144
                 </p>
                 <p>
                   <span className="font-semibold">Consulta:</span> 1ª planta
@@ -367,19 +415,18 @@ export default function LandingQuironValles() {
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">
-              Extracción de muelas del juicio en Sabadell
+              Bruxismo y dolor mandibular en Sabadell
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Las muelas del juicio o cordales pueden provocar dolor, infecciones
-              repetidas, inflamación de la encía o daño a los dientes vecinos. Nuestro
-              equipo de cirugía oral y maxilofacial en Sabadell está especializado en la
-              extracción de cordales incluidos o complejos, utilizando técnicas
-              quirúrgicas seguras y una planificación individualizada para cada paciente.
+              El bruxismo puede provocar sobrecarga muscular, dolor en la mandíbula,
+              sensación de tensión al despertar, desgaste dental y molestias en la
+              zona de la ATM. No siempre se manifiesta igual, por lo que es
+              importante valorar cada caso de forma individual.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Valoramos cada caso con radiografías o TAC dental cuando es necesario para
-              determinar la posición exacta del cordal y planificar la cirugía de forma
-              precisa.
+              En consulta estudiamos la función mandibular, la musculatura y la
+              oclusión para entender mejor el origen de las molestias y plantear una
+              estrategia terapéutica personalizada.
             </p>
           </div>
         </section>
@@ -388,18 +435,18 @@ export default function LandingQuironValles() {
           <div className="mx-auto max-w-6xl px-6 py-16">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tight">
-                Implantes dentales en Sabadell
+                Migrañas, cefaleas y dolor orofacial
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Los implantes dentales permiten sustituir dientes perdidos recuperando la
-                función masticatoria y la estética. En nuestra consulta del Hospital
-                Quirónsalud del Vallès realizamos tanto implantes unitarios como
-                rehabilitaciones más complejas.
+                Algunos pacientes presentan migrañas, cefaleas o dolor facial que se
+                agravan con el esfuerzo mandibular, el bruxismo o los trastornos de
+                ATM. Cuando existe una relación funcional, el estudio oclusal y
+                mandibular puede aportar información relevante.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                También tratamos casos con pérdida de hueso, dientes retenidos o
-                situaciones quirúrgicas complejas que requieren la valoración de un
-                cirujano maxilofacial.
+                Nuestro objetivo es ayudar a identificar si existe un componente
+                mandibular u oclusal en el dolor y orientar el tratamiento desde un
+                punto de vista funcional.
               </p>
             </div>
           </div>
@@ -408,27 +455,22 @@ export default function LandingQuironValles() {
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight">
-              Unidad de Cirugía Oral y Maxilofacial en Sabadell
+              Rehabilitación neuroclusal y ortodoncia funcional
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              La Unidad de Cirugía Oral y Maxilofacial del Hospital Quirónsalud del
-              Vallès está orientada al diagnóstico y tratamiento quirúrgico de patologías
-              de la cavidad oral y de los maxilares. Nuestro equipo atiende a pacientes
-              de Sabadell y del conjunto del Vallès que requieren procedimientos de
-              cirugía oral avanzada.
+              La rehabilitación neuroclusal busca optimizar la función del sistema
+              masticatorio y la relación oclusal, especialmente en pacientes con
+              alteraciones funcionales, sobrecarga muscular y sintomatología en ATM.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Entre los tratamientos más frecuentes se encuentran la extracción de muelas
-              del juicio complejas, el tratamiento de cordales incluidos, la cirugía de
-              quistes maxilares y la colocación de implantes dentales. También valoramos
-              situaciones más complejas que requieren planificación quirúrgica
-              individualizada.
+              En determinados pacientes, la ortodoncia funcional puede formar parte
+              del abordaje para mejorar la estabilidad, la función y el equilibrio
+              del sistema.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Nuestro objetivo es ofrecer una atención médica especializada, con un
-              enfoque seguro y personalizado para cada paciente, utilizando técnicas
-              actuales de cirugía oral y maxilofacial dentro del entorno hospitalario del
-              Hospital Quirónsalud del Vallès.
+              El plan de tratamiento siempre debe individualizarse según la clínica,
+              los hallazgos de la exploración y las necesidades concretas de cada
+              persona.
             </p>
           </div>
         </section>
@@ -439,62 +481,59 @@ export default function LandingQuironValles() {
           <div className="mt-8 max-w-3xl space-y-6 text-slate-700">
             <div>
               <h3 className="text-lg font-semibold">
-                ¿Cuándo es necesario quitar las muelas del juicio?
+                ¿Cómo sé si mi dolor viene de la ATM?
               </h3>
               <p className="mt-2">
-                La extracción de las muelas del juicio suele recomendarse cuando
-                provocan dolor, infecciones repetidas, inflamación de la encía, caries
-                en el diente vecino o cuando permanecen retenidas dentro del hueso. Cada
-                caso debe valorarse mediante exploración clínica y radiografías.
+                El dolor de ATM puede acompañarse de chasquidos, bloqueos,
+                limitación de apertura, dolor al masticar o molestias cerca del
+                oído. Una exploración especializada ayuda a valorar si la ATM está
+                implicada y si existen factores musculares u oclusales asociados.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold">
-                ¿Es dolorosa la extracción de una muela del juicio?
+                ¿El bruxismo puede causar dolor de cabeza?
               </h3>
               <p className="mt-2">
-                La intervención se realiza habitualmente con anestesia local y, en
-                algunos casos, con sedación. Durante el procedimiento el paciente no
-                siente dolor. Después de la cirugía puede aparecer inflamación o
-                molestias leves que normalmente se controlan con medicación y cuidados
-                postoperatorios.
+                Sí. En algunos pacientes, el bruxismo y la sobrecarga muscular se
+                relacionan con cefaleas, sensación de presión facial o dolor al
+                despertar. No siempre es la única causa, pero conviene valorarlo.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold">
-                ¿Cuánto tiempo dura la recuperación?
+                ¿Las migrañas pueden relacionarse con la mandíbula?
               </h3>
               <p className="mt-2">
-                La recuperación suele ser rápida. La mayoría de los pacientes pueden
-                retomar sus actividades habituales en pocos días. La inflamación suele
-                disminuir progresivamente durante la primera semana siguiendo las
-                recomendaciones del cirujano.
+                En ciertos casos puede existir una relación entre la función
+                mandibular, la musculatura masticatoria y determinados dolores de
+                cabeza. La valoración clínica permite estudiar si hay un componente
+                orofacial o funcional implicado.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold">
-                ¿Cuándo es recomendable colocar un implante dental?
+                ¿Qué es la rehabilitación neuroclusal?
               </h3>
               <p className="mt-2">
-                Los implantes dentales están indicados cuando se ha perdido uno o varios
-                dientes y se desea recuperar la función masticatoria y la estética.
-                Antes de realizar el tratamiento se evalúa la cantidad y calidad del
-                hueso mediante radiografías o TAC dental.
+                Es un enfoque orientado a mejorar la función oclusal y mandibular,
+                buscando estabilidad y equilibrio del sistema masticatorio según las
+                características de cada paciente.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold">
-                ¿Cuánto tiempo dura un implante dental?
+                ¿Todos los pacientes con dolor mandibular necesitan férula?
               </h3>
               <p className="mt-2">
-                Con una correcta planificación quirúrgica y una buena higiene oral, los
-                implantes dentales pueden mantenerse en buen estado durante muchos años.
-                Las revisiones periódicas y el mantenimiento adecuado son fundamentales
-                para su éxito a largo plazo.
+                No siempre. El tratamiento depende del origen del problema. En
+                algunos pacientes puede estar indicada una férula, pero en otros el
+                abordaje principal puede centrarse en la función, la oclusión o la
+                ortodoncia.
               </p>
             </div>
           </div>
@@ -502,27 +541,25 @@ export default function LandingQuironValles() {
 
         <section className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="text-3xl font-bold tracking-tight">
-            Información ampliada sobre tratamientos
+            Información ampliada
           </h2>
 
           <p className="mt-4 max-w-3xl text-lg text-slate-700">
-            Para pacientes que desean conocer más detalles sobre los tratamientos más
-            frecuentes de cirugía oral, hemos preparado páginas específicas con
-            información ampliada.
+            Para pacientes que desean conocer mejor cada problema y cada tratamiento,
+            prepararemos páginas específicas con información más detallada.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <a
-              href="/muelas-del-juicio-sabadell"
+              href="/dolor-atm-sabadell"
               className="block rounded-3xl border border-cyan-100 p-6 transition hover:shadow-md"
             >
               <h3 className="text-xl font-semibold">
-                Extracción de muelas del juicio en Sabadell
+                Dolor de ATM en Sabadell
               </h3>
               <p className="mt-3 text-slate-700">
-                Información detallada sobre cordales incluidos, síntomas frecuentes,
-                cuándo es recomendable la extracción y cómo es el proceso de
-                recuperación.
+                Información sobre síntomas, chasquidos, bloqueos mandibulares y
+                cuándo conviene realizar una valoración especializada.
               </p>
               <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
                 Ver información completa →
@@ -530,15 +567,15 @@ export default function LandingQuironValles() {
             </a>
 
             <a
-              href="/implantes-dentales-sabadell"
+              href="/bruxismo-sabadell"
               className="block rounded-3xl border border-cyan-100 p-6 transition hover:shadow-md"
             >
               <h3 className="text-xl font-semibold">
-                Implantes dentales en Sabadell
+                Bruxismo en Sabadell
               </h3>
               <p className="mt-3 text-slate-700">
-                Explicación completa sobre el tratamiento con implantes dentales,
-                planificación quirúrgica, casos complejos y resultados esperables.
+                Información sobre apretar los dientes, desgaste dental, dolor
+                mandibular y opciones de tratamiento.
               </p>
               <span className="mt-4 inline-block text-sm font-semibold text-cyan-900">
                 Ver información completa →
@@ -550,13 +587,12 @@ export default function LandingQuironValles() {
         <section className="bg-gradient-to-r from-cyan-600 to-rose-400 text-white">
           <div className="mx-auto max-w-6xl px-6 py-16 text-center">
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-              ¿Tienes dolor por una muela del juicio o necesitas valorar implantes
-              dentales?
+              ¿Tienes dolor de mandíbula, bruxismo o problemas de ATM?
             </h2>
 
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-white/90">
-              Nuestro equipo de cirugía oral y maxilofacial en Sabadell puede valorar tu
-              caso y orientarte sobre el tratamiento más adecuado.
+              Nuestro equipo puede valorar tu caso y orientarte sobre el tratamiento
+              más adecuado desde un enfoque funcional e individualizado.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
